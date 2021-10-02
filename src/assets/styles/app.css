@@ -1,0 +1,128 @@
+body[dir='rtl'] {
+  font-family: IRANSans;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+input.ltr-input,
+.ltr-input input {
+  text-align: left;
+  direction: ltr;
+}
+
+.recharts-wrapper {
+  direction: ltr;
+}
+
+.signIn-logos {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: -1;
+}
+
+.signIn-logos img {
+  width: 90px;
+  margin: 10px;
+}
+
+@media (max-width: 480px) {
+  body[dir='rtl'] .Toastify__toast-container {
+    right: 0;
+  }
+}
+
+body[dir='rtl'] .MuiTabs-scrollButtons .MuiSvgIcon-root {
+  transform: scaleX(1);
+}
+
+body[dir='rtl'] .MuiDropzoneSnackbar-icon.MuiSvgIcon-root {
+  transform: scaleX(1);
+}
+
+body[dir='rtl'] .Toastify__toast {
+  direction: rtl;
+  font-family: IRANSans;
+  text-align: right;
+  -moz-font-feature-settings: 'ss02';
+  -webkit-font-feature-settings: 'ss02';
+  font-feature-settings: 'ss02';
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html::-webkit-scrollbar-track {
+  display: none;
+}
+
+html::-webkit-scrollbar-track-piece:start,
+html::-webkit-scrollbar-track-piece:end,
+html::-webkit-scrollbar * {
+  background: transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  z-index: 1000000;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fa810e;
+  z-index: 1000000;
+}
+
+.google-map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+}
+
+a[href^="http://maps.google.com/maps"]
+{
+  display: none !important;
+}
+a[href^="https://maps.google.com/maps"]
+{
+  display: none !important;
+}
+
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+  display: none !important;
+}
+.gmnoprint div {
+  background: none !important;
+  display: none !important;
+}
+.gm-style-iw + div {
+  display: none !important;
+}
+.gm-ui-hover-effect {
+  display: none !important;
+}
+.gm-style-iw.gm-style-iw-c {
+  padding: 0;
+}
+.gm-style-iw-d {
+  overflow: inherit !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}

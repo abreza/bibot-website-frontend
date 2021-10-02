@@ -1,0 +1,42 @@
+.pin {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50% 50% 50% 0;
+  background-color: red;
+  transform: rotate(-45deg);
+  position: relative;
+}
+
+.pin:before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}
+
+.pin:after {
+  content: '';
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid red;
+  position: absolute;
+  left: -15px;
+  bottom: -15px;
+  animation: locate 2s ease-out infinite;
+}
+
+@keyframes locate {
+  from {
+    transform: perspective(30px) rotateY(60deg) rotateX(40deg) scale(0.7);
+  }
+  to {
+    transform: perspective(40px) rotateY(60deg) rotateX(40deg) scale(1);
+    opacity: 0.1;
+  }
+}

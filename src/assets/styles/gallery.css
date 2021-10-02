@@ -1,0 +1,8 @@
+.image-gallery-icon.image-gallery-play-button {
+  display: none;
+}
+
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+  width: auto;
+  max-width: 100%;
+}
